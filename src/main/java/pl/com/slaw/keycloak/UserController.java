@@ -53,9 +53,6 @@ public class UserController
         return "page";
     }
 
-
-
-
     @GetMapping("/for-admin")
     @PreAuthorize("hasAuthority('admin')")
     public String formAdmin()
